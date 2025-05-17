@@ -1,0 +1,16 @@
+<div class="container w-100">
+    <nav class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand fw-bold" routerLink="/">MyStore</a>
+        <div class="d-flex align-items-center">
+            <a routerLink="/login" routerLinkActive="active" class="nav-link me-3">Login </a>
+            <a routerLink="/register" routerLinkActive="active" class="nav-link">Register</a>
+            <a routerLink="/cart" routerLinkActive="active" class="nav-link position-relative">
+                <!-- <i class="fas fa-shopping-cart"></i> -->
+                <i class="fa fa-shopping-cart fs-2 ms-3"></i>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{cartItemList?.length}}
+                </span>
+            </a>
+        </div>
+    </nav>
+</div>
